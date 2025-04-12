@@ -60,8 +60,11 @@ When running pancard_model4.py ensure chrome on linux is closed and everytime yo
 You will have to logout of https://apicentral.idfy.com/sessions/new everytime before or during the pan card execution.  
 When the chrome opens for verification of valid pan from govt database just logout and do not click anything on chrom when it opens on its own.  
 
-#### Navigate to Main_folder/blockchain-storage
-## Run on seperate terminals 
+## Run on 4 seperate terminals 
+### 0. Navigate on every terminal to the file:
+```bash
+cd Main_folder/blockchain-storage/IPFS.py
+```
 ### 1. Running the blockchain (Very important):
 ```bash
 npx hardhat node
