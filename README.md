@@ -48,11 +48,12 @@ sudo apt install chromium-browser
 
 ---
 
-# Running The files:
+# Running The files (Each of the 4 on their own linux terminals):
+### Navigate to Main_folder/blockcgain-storage
 
-## 1. Running the main uploading pan card website:
+## 1. Running the blockchain (Very important):
 ```bash
-streamlit run pancarad_model4.py
+npx hardhat node
 ```
 ## 2. Running the main uploading pan card website:
 ```bash
