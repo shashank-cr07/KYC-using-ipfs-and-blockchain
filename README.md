@@ -49,7 +49,8 @@ sudo apt install chromium-browser
 ---
 
 # Running The files (Each of the 4 on their own linux terminals):
-### Navigate to Main_folder/blockcgain-storage
+
+#### Navigate to Main_folder/blockchain-storage
 
 ## 1. Running the blockchain (Very important):
 ```bash
