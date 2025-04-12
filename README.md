@@ -48,7 +48,7 @@ sudo apt install chromium-browser
 
 ---
 
-# Running The files (Each of the 4 on their own linux terminals):
+# Running The files :
 
 ## Things to change before running:
 #### 1. Adding twillio and pinata api keys(After you create an account here) in Main_folder/blockchain-storage/pancard_model4.py
@@ -61,20 +61,20 @@ You will have to logout of https://apicentral.idfy.com/sessions/new everytime be
 When the chrome opens for verification of valid pan from govt database just logout and do not click anything on chrom when it opens on its own.  
 
 #### Navigate to Main_folder/blockchain-storage
-
-## 1. Running the blockchain (Very important):
+## Run on seperate terminals 
+### 1. Running the blockchain (Very important):
 ```bash
 npx hardhat node
 ```
-## 2. Running the main uploading pan card website:
+### 2. Running the main uploading pan card website:
 ```bash
 streamlit run pancarad_model4.py
 ```
-## 3. Running the bank verification of kycs using contract address website:
+### 3. Running the bank verification of kycs using contract address website:
 ```bash
 streamlit run bank2.py
 ```
-## 4. Running the ipfs check to retrive pan card image for law enforcement:
+### 4. Running the ipfs check to retrive pan card image for law enforcement:
 ```bash
 streamlit run IPFS.py
 ```
