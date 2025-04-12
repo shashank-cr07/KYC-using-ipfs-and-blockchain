@@ -45,3 +45,24 @@ Use the below if chrome-stable (above) is unavailable
 sudo apt install chromium-browser
 
 ```
+
+---
+
+#Running The files:
+
+##1. Running the main uploading pan card website:
+```bash
+streamlit run pancarad_model4.py
+```
+##2. Running the main uploading pan card website:
+```bash
+streamlit run pancarad_model4.py
+```
+##3. Running the bank verification of kycs using contract address website:
+```bash
+streamlit run bank2.py
+```
+##4. Running the ipfs check to retrive pan card image for law enforcement:
+```bash
+streamlit run IPFS.py
+```
