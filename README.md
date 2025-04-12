@@ -63,7 +63,7 @@ When the chrome opens for verification of valid pan from govt database just logo
 ## Run on 4 seperate terminals 
 ### 0. Navigate on every terminal to the file:
 ```bash
-cd Main_folder/blockchain-storage/IPFS.py
+cd Main_folder/blockchain-storage
 ```
 ### 1. Running the blockchain (Very important):
 ```bash
