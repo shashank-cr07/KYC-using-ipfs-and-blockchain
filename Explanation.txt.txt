@@ -1,0 +1,31 @@
+This is the explanation of the working of this project and tasks performed at each level of the architecture.(Refer image)
+
+
+1) The client side website:
+	The user uploads his pan
+	There are many checks done on the backend which include:
+	a) Image processing done to check if the given image is even a pan card or a random photo
+	b) Inception model for fraud detection trained on a small dataset available to us 
+	c) Tesseract OCR extraction to obtain the dob and pan number 
+
+	The obtained pan id and dob is sent to https://apicentral.idfy.com/sessions/new for check in govt database using selenium
+	On success the user is prompted with an otp using twillio (Free version of twillio allows only the main recipient)
+	** We can perform obtain the number from the govt database and sent an otp to the phone no linked to that pan
+
+	Now the zkps and smart contracts are generated and pushed onto the block 
+	The contract address is given to the user for future reference
+	The image then undergoes a custom hashing based on the contract address.
+	This hashed image is sent to the ipfs decentralized storage(Pinata in this case) for storage
+
+2) Bank side website:
+
+	Each bank will have their own logins 
+	Now the bank can check if a user has his kyc done with a check on the block using zkps and the user's smart contract address
+	Returns true/false if kyc has been verified
+
+
+3) Legal authorities website:
+	The legal authority can see all the images of the pans on the ipfs(Which was initially hashed)
+	If he wants to unhash the pan image he will have to give the smart contract id
+	Upon receiving the contract id the backend performs unhash function on all images 
+	Does an OCR check to see if the given contract address is correct then the unhashed image will be perfect hence returns image
